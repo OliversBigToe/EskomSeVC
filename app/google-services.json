@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "120958156075",
+    "firebase_url": "https://eskonsevc-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eskonsevc",
+    "storage_bucket": "eskonsevc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120958156075:android:d9fe226dce150806c7196e",
+        "android_client_info": {
+          "package_name": "com.example.eskomsevc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120958156075-i5329f5m4nqcaavcfvd5rbio34kvjgcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3OalyeRWUrwoqz6LxblJM6otVjHdLzcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120958156075-i5329f5m4nqcaavcfvd5rbio34kvjgcp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
