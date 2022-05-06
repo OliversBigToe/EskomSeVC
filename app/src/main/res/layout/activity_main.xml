@@ -10,9 +10,9 @@
         android:id="@+id/lblHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="12dp"
         android:text="Eskom se VC"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/lblLocations"
@@ -23,22 +23,22 @@
         android:id="@+id/lstTimes"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="77dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="31dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnLocation" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
 
     <Spinner
         android:id="@+id/spnLocation"
-        android:layout_width="323dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/lstTimes"
+        android:layout_width="315dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/spnDay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblLocations" />
@@ -47,11 +47,35 @@
         android:id="@+id/lblLocations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="15dp"
         android:text="Choose your location"
         app:layout_constraintBottom_toTopOf="@+id/spnLocation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblHeading" />
+
+    <Spinner
+        android:id="@+id/spnDay"
+        android:layout_width="319dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnLocation" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:onClick="search"
+        android:text="Search"
+        app:layout_constraintBottom_toTopOf="@+id/lstTimes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnDay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
